@@ -1207,3 +1207,12 @@ describe('Range', () => {
     });
   });
 });
+
+it('falls back to global aria-invalid for omitted range entries', () => {
+  const { container } = render(
+    <Slider range ariaInvalid="grammar" ariaInvalidForHandle={[false]} />,
+  );
+  const handles = container.getElementsByClassName('rc-slider-handle');
+  expect(handles[0]).toHaveAttribute('aria-invalid', 'false');
+  expect(handles[1]).toHaveAttribute('aria-invalid', 'grammar');
+});

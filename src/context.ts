@@ -17,7 +17,7 @@ export interface SliderContextProps {
   ariaLabelledByForHandle?: string | string[];
   ariaDescribedByForHandle?: string | string[];
   ariaRequired?: boolean;
-  ariaInvalid?: boolean;
+  ariaInvalid?: AriaInvalid;
   ariaInvalidForHandle?: AriaInvalid | AriaInvalid[];
   ariaValueTextFormatterForHandle?: AriaValueFormat | AriaValueFormat[];
   classNames: SliderClassNames;

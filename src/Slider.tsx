@@ -116,7 +116,7 @@ export interface SliderProps<ValueType = number | number[]> {
   ariaLabelledByForHandle?: string | string[];
   ariaDescribedByForHandle?: string | string[];
   ariaRequired?: boolean;
-  ariaInvalid?: boolean;
+  ariaInvalid?: AriaInvalid;
   ariaInvalidForHandle?: AriaInvalid | AriaInvalid[];
   ariaValueTextFormatterForHandle?: AriaValueFormat | AriaValueFormat[];
 }
